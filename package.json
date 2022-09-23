@@ -1,0 +1,72 @@
+{
+  "name": "cloudbees-openfeature-provider-browser",
+  "version": "0.0.1-beta1",
+  "description": "An OpenFeature provider for CloudBees Feature Management",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "author": "Rollout.io <support@cloudbees.com>",
+  "license": "Apache 2.0",
+  "homepage": "https://www.cloudbees.com/products/feature-management",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rollout/cloudbees-openfeature-provider-browser"
+  },
+  "bugs": {
+    "url": "https://github.com/rollout/cloudbees-openfeature-provider-browser/issues",
+    "email": "support@cloudbees.com"
+  },
+  "keywords": [
+    "openfeature",
+    "feature-flag",
+    "feature-flags",
+    "rollout",
+    "rox",
+    "flags",
+    "flag",
+    "configuration",
+    "remote-control",
+    "rollout.io",
+    "cloudbees"
+  ],
+  "scripts": {
+    "test": "jest --verbose --forceExit",
+    "lint": "eslint ./",
+    "clean": "rm -fr ./dist",
+    "type": "tsc --project tsconfig.json --declaration --emitDeclarationOnly",
+    "build:esm": "esbuild ./src/index.ts --bundle --sourcemap --target=es2016 --format=esm --outfile=./dist/esm/index.js --analyze",
+    "build:cjs": "esbuild ./src/index.ts --bundle --sourcemap --target=es2016 --format=cjs --outfile=./dist/cjs/index.js --analyze",
+    "build": "npm run clean && npm run type && npm run build:esm && npm run build:cjs",
+    "postbuild": "cp ./package.esm.json ./dist/esm/package.json",
+    "current-version": "echo $npm_package_version"
+  },
+  "ROX": {
+    "api_version": "1.9.0"
+  },
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "@openfeature/js-sdk": "0.4.0-experimental-e9ba70956ed77c7b41032b149a8f6bf915ae50e4",
+    "jest-environment-jsdom": "^29.0.3",
+    "rox-browser": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.4",
+    "@types/node": "^18.7.16",
+    "@types/rox-browser": "^5.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "esbuild": "^0.15.1",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-check-file": "^1.2.1",
+    "eslint-plugin-jest": "^27.0.2",
+    "jest": "^28.1.0",
+    "jest-junit": "^14.0.1",
+    "prettier": "^2.6.2",
+    "ts-jest": "^28.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  }
+}
