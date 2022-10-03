@@ -660,10 +660,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@openfeature/js-sdk@0.4.0-experimental-e9ba70956ed77c7b41032b149a8f6bf915ae50e4":
-  version "0.4.0-experimental-e9ba70956ed77c7b41032b149a8f6bf915ae50e4"
-  resolved "https://registry.yarnpkg.com/@openfeature/js-sdk/-/js-sdk-0.4.0-experimental-e9ba70956ed77c7b41032b149a8f6bf915ae50e4.tgz#138c3d71948f578f88abe10be645f23ef2f5af26"
-  integrity sha512-udmgm4BTHA/4s3loJYpV2TJA0a1R/xxTpUPUCJXFkXqC7yWCRpALGKuqIB4uwydIAkinQ1lVBmT45kLQZZy1Fw==
+"@openfeature/js-sdk@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@openfeature/js-sdk/-/js-sdk-0.5.0.tgz#85ea7177213866df65c2b165f2b913ccb114c1bf"
+  integrity sha512-t4+2zTrzj+Vx0otH67tkUsLFF0WzXXJkQu+umLwSSrjJar70AM0XemiErNqUdXEyw1/mHYNeeLuNq60voAf0fA==
 
 "@sinclair/typebox@^0.24.1":
   version "0.24.38"
