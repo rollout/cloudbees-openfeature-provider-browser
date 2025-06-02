@@ -39,7 +39,7 @@ yarn add @openfeature/js-sdk
 
 ### Configuration
 
-Follow the instructions on the [Node SDK project](https://github.com/open-feature/node-sdk) for how to use the Node SDK.
+Follow the instructions on the [JS SDK project](https://github.com/open-feature/js-sdk) for how to use the SDK.
 
 You can configure the CloudBees provider by doing the following:
 
@@ -47,8 +47,8 @@ You can configure the CloudBees provider by doing the following:
 import {OpenFeature} from '@openfeature/js-sdk';
 import {CloudbeesProvider} from 'cloudbees-openfeature-provider-browser'
 
-const appKey = 'INSERT_APP_KEY_HERE'
-OpenFeature.setProvider(await CloudbeesProvider.build(appKey));
+const sdkKey = '<INSERT_SDK_KEY_HERE>'
+OpenFeature.setProvider(await CloudbeesProvider.build(sdkKey));
 const client = OpenFeature.getClient();
 const value = await client.getBooleanValue('enabled-new-feature', false);
 ```
