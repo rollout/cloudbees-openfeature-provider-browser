@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/rollout/cloudbees-openfeature-provider-browser/compare/v1.0.0...v1.0.1) (2025-06-04)
+
+
+### Miscellaneous Chores
+
+* release 1.0.1 ([1de1996](https://github.com/rollout/cloudbees-openfeature-provider-browser/commit/1de19960657a96443f7d3e698ac6ed0566271744))
+
 ## [1.0.0](https://github.com/rollout/cloudbees-openfeature-provider-browser/compare/v0.5.1...v1.0.0) (2022-10-20)
 
 
